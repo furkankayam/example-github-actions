@@ -1,4 +1,4 @@
-name: React Spring Boot App CI/CD Actions
+name: Example
 
 on:
   push:
@@ -92,5 +92,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/example-crud-app:${{ github.sha }}
-            ${{ secrets.DOCKER_USERNAME }}/example-crud-app:latest
+            ${{ secrets.DOCKER_USERNAME }}/example:${{ github.sha }}
+            ${{ secrets.DOCKER_USERNAME }}/example:latest
